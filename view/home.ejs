@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign Up with OAuth</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <% if (user) { %>
+        <li><a href="/auth/logout">Logout</a></li>
+        <% } else { %>
+        <li><a href="/auth/login">Login</a></li>
+        <% } %>
+        <li><a href="/">Homepage</a></li>
+        <% if (user) { %>
+        <li><a href="/profile">Profile</a></li>
+        <% } %>
+      </ul>
+    </nav>
+    <header>
+      <h1>E-contractor</h1>
+      <h2>Homepage</h2>
+    </header>
+    <main>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem,
+        alias sed quia, illo quasi cum similique iste vero iure voluptas, facere
+        ex soluta sunt at eveniet nisi blanditiis magnam et.
+      </p>
+    </main>
+  </body>
+</html>
